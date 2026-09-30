@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro tebe 🤍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Ahoj, Tynko 🤍</h1>
+
+        <p>
+            Jestli jsi se právě probudila z noční můry,
+            chci, abys věděla, že jsi v bezpečí.
+        </p>
+
+        <button onclick="nocniMura()">
+            🌙 Probudila jsem se z noční můry
+        </button>
+
+        <button onclick="objeti()">
+            🫂 Potřebuju obejmout
+        </button><button onclick="nevimCoPotrebuju()">
+    🎲 Nevím, co potřebuju
+</button><button onclick="vtipnaCast()">
+    😂 Potřebuju se zasmát
+</button>
+<button onclick="dobrouNoc()">
+    🌙 Dobrou noc, Cariño Mío
+</button>
+
+<div id="dobrouNoc" class="hidden">
+
+    <div class="night-icon">🌙</div>
+
+    <h2>Dobrou noc, Cariño Mío 🤍</h2>
+
+    <p id="nocniText">
+        Teď už můžeš na chvíli vypnout celý svět.
+    </p>
+
+    <button onclick="dalsiNocniZprava()">
+        🌙 Ještě jednu
+    </button>
+
+</div>
+<div id="vtipnaCast" class="hidden">
+
+    <div class="laugh">😂</div>
+
+    <h2>Tak dobře. Přichází blbost. 👀</h2>
+
+    <p id="vtipnyText">
+        Připrav se...
+    </p>
+
+    <button onclick="dalsiVtip()">
+        😂 Ještě jeden
+    </button>
+
+</div>
+<button onclick="hlasovaZprava()">
+    🎙️ Můj hlas pro tebe
+</button>
+
+<div id="hlas" class="hidden">
+
+    <div class="voice-icon">🎙️</div>
+
+    <h2>Jen na chvíli poslouchej. 🤍</h2>
+
+    <p>
+        Tohle je můj hlas jen pro tebe.
+        Pusť si ho, kdykoliv budeš chtít.
+    </p>
+
+    <audio id="mojeAudio" controls>
+        <source src="hlas.mp3" type="audio/mpeg">
+        Tvůj prohlížeč nepodporuje přehrávání audia.
+    </audio>
+
+</div>
+<div id="nahoda" class="hidden">
+
+    <div class="random-icon">✨</div>
+
+    <h2 id="nahodaNadpis">Pro tebe 🤍</h2>
+
+    <p id="nahodaText">
+        Chvilku počkej...
+    </p>
+
+    <button onclick="nevimCoPotrebuju()">
+        🎲 Ještě jednou
+    </button>
+
+</div>
+        <button onclick="hezkyVzkaz()">
+    💌 Chci něco hezkého
+</button>
+
+<div id="hezky" class="hidden">
+
+    <div class="letter">💌</div>
+
+    <h2>Pro moje Cariño Mío 🤍</h2>
+
+    <p id="hezkyText">
+        Jen jsem ti chtěl připomenout, jak moc jsi pro mě výjimečná.
+    </p>
+
+    <button onclick="dalsiVzkaz()">
+        💕 Ještě jeden
+    </button>
+
+    <button onclick="zpetVzkaz()">
+        Zpátky
+    </button>
+
+</div>
+
+        <div id="uklidneni" class="hidden">
+            <div class="moon">🌙</div>
+
+            <h2>Cariño Mío 🤍</h2>
+
+            <p>
+                Hej… pomalu.<br>
+                Jsi vzhůru. Jsi v bezpečí.<br>
+                Byl to jen sen.
+            </p>
+
+            <p>
+                Nemusíš teď na nic myslet.<br>
+                Jen si lehni zpátky, zachumlej se<br>
+                a chvíli jen dýchej.
+            </p>
+
+            <p class="love-message">
+                A i když teď nejsem vedle tebe,<br>
+                pořád jsem s tebou. ❤️
+            </p>
+
+            <button onclick="zpet()">🤍 Zpátky</button>
+        </div>
+
+        <div id="objeti" class="hidden">
+
+            <div class="hug">🫂</div>
+
+            <h2>Tak pojď sem, Cariño Mío. 🤍</h2>
+
+            <p id="objetiText">
+                Kdybych teď mohl, tak tě jen obejmu
+                a chvíli nepustím.
+            </p>
+
+            <button onclick="dalsiObjeti()">🤍 Ještě jednu</button>
+            <button onclick="zpetObjeti()">Zpátky</button>
+
+        </div>
+
+    </div>
+<div class="tajne-misto">
+    <button onclick="tajnaCast()">
+        🤫 Psst... ještě něco
+    </button>
+
+    <div id="tajnaCast" class="hidden">
+        <div class="secret-heart">💖</div>
+
+        <h2>Tady jsi neměla být... 👀</h2>
+
+        <p id="tajnaText">
+            Ale když už jsi to našla...
+            mám pro tebe jedno malé tajemství. 🤍
+        </p>
+
+        <button onclick="dalsiTajne()">
+            ✨ Otevřít tajemství
+        </button>
+    </div>
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
